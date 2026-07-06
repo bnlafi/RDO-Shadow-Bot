@@ -1,0 +1,19 @@
+BOT_TOKEN = "8725115947:AAHchYsmnNOdgSNl0xEIvN5X0Vl5pG2fP-Q"
+
+BOT_NAME = "RDO Shadow Bot"
+
+ADMIN_IDS = []
+
+GROUP_CHAT_ID = "-1003973562124"
+
+API_BASE = "https://api.rdo.gg"
+
+CACHE_MINUTES = 10
+
+LANGUAGE = "ar"
+
+TIMEZONE = "Asia/Riyadh"
+
+POST_DAILY = True
+
+POST_TIME = "09:00"
