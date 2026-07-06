@@ -1,3 +1,19 @@
+from telegram import Update
+from telegram.ext import ContextTypes
+
+from keyboards import main_menu
+from api import get_daily_challenges
+from translations import translate
+
+
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text(
+        "🤠 أهلاً بك في RDO Shadow Bot\n\n"
+        "اختر الخدمة من القائمة بالأسفل.",
+        reply_markup=main_menu(),
+    )
+
+
 async def daily(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
@@ -39,3 +55,42 @@ async def daily(update: Update, context: ContextTypes.DEFAULT_TYPE):
             text += "\n"
 
     await query.message.reply_text(text)
+
+
+async def nazar(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    await query.message.reply_text("🗺️ موقع Madam Nazar سيتم إضافته قريبًا.")
+
+
+async def harriet(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    await query.message.reply_text("🦌 Harriet سيتم إضافتها قريبًا.")
+
+
+async def cripps(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    await query.message.reply_text("🏕️ Cripps سيتم إضافته قريبًا.")
+
+
+async def monthly(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    await query.message.reply_text("📰 تحديثات الشهر قريبًا.")
+
+
+async def limited(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    await query.message.reply_text("🎁 العناصر المحدودة قريبًا.")
+
+
+async def help_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    await query.message.reply_text(
+        "ℹ️ RDO Shadow Bot\n\n"
+        "تم تطوير البوت لخدمة لاعبي Red Dead Online."
+    )
