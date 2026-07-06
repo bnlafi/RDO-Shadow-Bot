@@ -1,8 +1,7 @@
 from telegram.ext import (
     Application,
     CommandHandler,
-    MessageHandler,
-    filters,
+    CallbackQueryHandler,
 )
 
 from config import BOT_TOKEN
@@ -25,13 +24,13 @@ def main():
 
     app.add_handler(CommandHandler("start", start))
 
-    app.add_handler(MessageHandler(filters.Regex("^🎯 تحديثات اليوم$"), daily))
-    app.add_handler(MessageHandler(filters.Regex("^🗺️ Madam Nazar$"), nazar))
-    app.add_handler(MessageHandler(filters.Regex("^🦌 Harriet$"), harriet))
-    app.add_handler(MessageHandler(filters.Regex("^🏕️ Cripps$"), cripps))
-    app.add_handler(MessageHandler(filters.Regex("^📰 تحديثات الشهر$"), monthly))
-    app.add_handler(MessageHandler(filters.Regex("^🎁 العناصر المحدودة$"), limited))
-    app.add_handler(MessageHandler(filters.Regex("^ℹ️ المساعدة$"), help_cmd))
+    app.add_handler(CallbackQueryHandler(daily, pattern="^daily$"))
+    app.add_handler(CallbackQueryHandler(nazar, pattern="^nazar$"))
+    app.add_handler(CallbackQueryHandler(harriet, pattern="^harriet$"))
+    app.add_handler(CallbackQueryHandler(cripps, pattern="^cripps$"))
+    app.add_handler(CallbackQueryHandler(monthly, pattern="^monthly$"))
+    app.add_handler(CallbackQueryHandler(limited, pattern="^limited$"))
+    app.add_handler(CallbackQueryHandler(help_cmd, pattern="^help$"))
 
     print("✅ RDO Shadow Bot Started")
 
