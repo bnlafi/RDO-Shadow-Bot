@@ -1,43 +1,63 @@
 TRANSLATIONS = {
+
     # الأقسام
     "general": "🌍 التحديات العامة",
+    "easy": "⭐ التحديات السهلة",
+    "med": "⭐⭐ التحديات المتوسطة",
+    "hard": "⭐⭐⭐ التحديات الصعبة",
+
     "bounty_hunter": "🤠 صائد الجوائز",
     "trader": "🚚 التاجر",
     "collector": "💰 الجامع",
     "moonshiner": "🥃 المهرب",
     "naturalist": "🦌 عالم الطبيعة",
 
-    # Trader
-    "MPRC_TRADER_STEW_EATEN": "🍲 تناول يخنة كريبس",
-    "MPRC_TRADER_RESUPPLY_COMPLETED": "📦 أكمل مهمة إعادة التموين",
-    "MPRC_TRADER_SUPPLIES_DONATED_ANIMAL_MEDIUM": "🦌 تبرع بحيوان متوسط",
-    "MPRC_TRADER_SUPPLIES_DONATED_ANIMAL_LARGE": "🦬 تبرع بحيوان كبير",
-    "MPRC_TRADER_GOODS_SOLD_LOCAL": "🚚 بع بضاعة محلية",
-    "MPRC_TRADER_GOODS_SOLD_DISTANT": "🌍 بع بضاعة بعيدة",
+    # التحديات العامة
+    "MPRC_TURKEYS_SKINNED": "🦃 سلخ 3 ديك رومي",
+    "MPRC_CONSUMABLE_BECAME_DRUNK": "🍺 اسكر مرة واحدة",
+    "MPRC_CUSTOMIZATION_HORSE_KIT": "🐎 غيّر تجهيز الحصان",
+    "MPRC_FME_ATTEMPTS": "🎯 أكمل حدث حر",
+    "MPRC_HORSE_JUMP_FROM_HEIGHT": "🐴 اقفز من مكان مرتفع بالحصان",
+    "MPRC_PLAYERS_KILLED_FROM_HIP_SHOWDOWN": "🔫 اقتل لاعبًا من الخصر",
+    "MPRC_PLAYERS_KILLED_SHOWDOWN_TIMER": "⚔️ اقتل لاعبًا في المواجهات",
 
-    # Collector
-    "MPRC_COLLECTOR_COINS_FOUND": "🪙 اعثر على عملات",
-    "MPRC_COLLECTOR_ARROWHEADS_FOUND": "🏹 اعثر على رؤوس سهام",
-    "MPRC_COLLECTOR_USED_MAP": "🗺️ استخدم خريطة جامع",
-    "MPRC_COLLECTOR_COLLECTIBLES_FOUND": "💎 اعثر على مقتنيات",
-
-    # Bounty Hunter
-    "MPRC_BOUNTY_GENERAL_DELIVERED_HARD": "🤠 سلّم مطلوبًا بصعوبة عالية",
+    # صائد الجوائز
+    "MPRC_BOUNTY_GENERAL_DELIVERED": "📦 سلّم مطلوبين",
+    "MPRC_BOUNTY_USED_EAGLE_EYE": "👁️ استخدم عين النسر",
+    "MPRC_BOUNTY_USED_TRACK_ARROW": "🏹 استخدم سهم التتبع",
+    "MPRC_BOUNTY_GENERAL_DELIVERED_HARD": "📦 سلّم مطلوبين (صعب)",
     "MPRC_BOUNTY_GENERAL_DELIVERED_MULTI_TARGET": "🎯 سلّم عدة مطلوبين",
-    "MPRC_BOUNTY_GENERAL_DELIVERED_TIMED_HARD": "⏱️ سلّم مطلوبًا قبل انتهاء الوقت",
+    "MPRC_BOUNTY_GENERAL_DELIVERED_TIMED_HARD": "⏱️ أكمل مهمة مطلوبة بوقت",
 
-    # Moonshiner
-    "MPRC_MOONSHINER_MOONSHINE_SOLD_BUYER": "🥃 بع دفعة مون شاين",
+    # التاجر
+    "MPRC_TRADER_SUPPLIES_DONATED": "📦 تبرع بالإمدادات",
+    "MPRC_TRADER_SUPPLIES_DONATED_CARCASS_PERFECT": "🦌 تبرع بجثة مثالية",
+    "MPRC_TRADER_TRAVEL_WAGON": "🚚 قد عربة التاجر",
+    "MPRC_TRADER_RESUPPLY_COMPLETED": "📦 أكمل إعادة التزويد",
+    "MPRC_TRADER_STEW_EATEN": "🍲 تناول يخنة كريبس",
+
+    # الجامع
+    "MPRC_COLLECTOR_ARROWHEADS_FOUND": "🏹 اعثر على رؤوس سهام",
+    "MPRC_COLLECTOR_COINS_FOUND": "🪙 اعثر على عملات",
+    "MPRC_COLLECTOR_USED_MAP": "🗺️ استخدم خريطة جامع",
+    "MPRC_COLLECTOR_ITEMS_LOOTED_ENEMY": "💰 اجمع مقتنيات من الأعداء",
+    "MPRC_COLLECTOR_USED_METAL_DETECTOR": "📡 استخدم كاشف المعادن",
+    "MPRC_COLLECTOR_WILD_FLOWERS_FOUND": "🌼 اعثر على زهور برية",
+
+    # المهرب
+    "MPRC_MOONSHINER_MOONSHINE_DRANK": "🥃 اشرب مون شاين",
     "MPRC_MOONSHINER_MOONSHINE_SERVED_BAR": "🍺 قدّم مون شاين في الحانة",
-    "MPRC_MOONSHINER_DRANK_MOONSHINE": "🥃 اشرب مون شاين",
+    "MPRC_MOONSHINER_MOONSHINE_SOLD_BUYER": "💰 بع مون شاين لمشترٍ",
+    "MPRC_MOONSHINER_TRAVEL_WAGON": "🚛 قد عربة التهريب",
 
-    # Naturalist
-    "MPRC_NATURALIST_USED_LEGENDARY_BAIT": "🦌 استخدم طُعمًا أسطوريًا",
-    "MPRC_NATURALIST_PHOTO_ANIMAL_LEGENDARY": "📷 صوّر حيوانًا أسطوريًا",
+    # عالم الطبيعة
+    "MPRC_NATURALIST_DONT_KILL_ANIMALS": "🦌 لا تقتل أي حيوان",
     "MPRC_NATURALIST_CRAFTED_BLENDING_TONIC": "🧪 اصنع منشط التخفي",
+    "MPRC_NATURALIST_PHOTO_ANIMAL_LEGENDARY": "📷 صوّر حيوانًا أسطوريًا",
     "MPRC_NATURALIST_TRANQ_ANIMAL_REVIVED": "💉 أنعش حيوانًا بعد تخديره",
+    "MPRC_NATURALIST_CRAFTED_COOKED_WILDERNESS_CAMP": "🔥 اطبخ في المخيم البري",
 }
 
 
 def translate(text: str) -> str:
-    return TRANSLATIONS.get(text, text.replace("_", " "))
+    return TRANSLATIONS.get(text, text)
