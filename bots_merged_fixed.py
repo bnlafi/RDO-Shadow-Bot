@@ -1,16 +1,28 @@
 import subprocess
+import sys
 import time
 
 bots = [
-    "/home/bnlafi/Red Dead Bots/nzar_updated.py",
-    "/home/bnlafi/Red Dead Bots/animals bot keep files together/Hharii .py",
-    "/home/bnlafi/Red Dead Bots/crips.py",
-    "/home/bnlafi/Red Dead Bots/fenc.py",
-    "/home/bnlafi/Red Dead Bots/saddi.py"
+    "nzar_updated.py",
+    "Hharii (7).py",
+    "crips (2).py",
+    "fenc (2).py",
+    "saddi (1).py",
 ]
 
-for bot in bots:
-    subprocess.Popen(["python3.13", bot])
+processes = []
 
-while True:
-    time.sleep(60)
+for bot in bots:
+    try:
+        p = subprocess.Popen([sys.executable, bot])
+        processes.append(p)
+        print(f"Started: {bot}")
+    except Exception as e:
+        print(f"Failed to start {bot}: {e}")
+
+try:
+    while True:
+        time.sleep(60)
+except KeyboardInterrupt:
+    for p in processes:
+        p.terminate()
